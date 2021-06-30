@@ -1,0 +1,628 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+html, body{
+    height: 100%;
+    font-family: sans-serif;
+    scroll-behavior: smooth   
+}
+:root{
+    
+    --secondary-color:rgb(84, 152, 197);
+}
+
+
+/*navbar*/
+.logo{
+    color: white;
+}
+.navbar .flex{
+    justify-content: space-between;
+}
+.home{
+    border: solid var(--secondary-color);
+}
+.navbar .container{
+    padding: 20px 40px;
+   box-shadow: 0 3px 10px rgb(0, 0, 0, 0.9);
+   background-color:rgb(59, 56, 56);
+   border-radius: 95px;
+   
+}
+.navbar{
+    background-color:var(--secondary-color);
+    padding: 100px 0
+}
+.navbar ul{
+    display: flex;
+    
+}
+.navbar ul li{
+    margin: 10px 10px;
+    padding: 10px 10px;
+    border: solid white;
+    border-radius: 55px;
+    
+   
+}
+.navbar ul li a{
+    letter-spacing: 2px;
+    color: white;
+    text-decoration: none;
+    padding: 5px 5px;
+    font-weight: 545;
+   
+   
+
+}
+.navbar ul li:hover{
+    border: solid var(--secondary-color);
+   
+}
+
+
+
+
+/*about*/
+.about .container{
+    padding: 50px 40px;
+    margin: auto;
+}
+.about img{
+    animation: slideinfromright 0.5s ease-in ;
+}
+.about p{
+    letter-spacing: 1.5px;
+    font-weight: 549;
+    margin-top: 32px;
+}
+.about  .grid{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 55px;
+    
+}
+/*travellers-choices*/
+#trav-choices{
+    background-color:rgb(59, 56, 56);}
+#trav-choices .container{
+    padding: 3%;
+    max-width: 95%;
+    justify-items: center;
+    display: list-item;
+    
+}
+#trav-choices .container .travel-tag {
+   text-align: center;
+   
+ align-content: center;
+ margin-bottom: 3%;
+ 
+  
+}
+#trav-choices  h1{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+    font-size: 45px;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.884);
+    
+}
+
+.main-card{
+    width: 100%;
+    display: grid;
+    gap: 20px;
+    grid-template-rows: repeat(3 , 280px);
+    grid-template-columns: repeat(2, 1fr ) 25%;
+    overflow: hidden;
+}
+.pic1{
+    grid-column: 1/-1;
+}
+.pic4{
+    grid-row: 2/4;
+    grid-column: 3/4;
+}
+.pic5{
+    grid-column: 1/span 2;
+}
+.pic1 ,.pic2, .pic3, .pic4, .pic5{
+    position: relative;
+}
+.text1{
+    position: absolute;
+    
+   bottom: 180px;
+    left: 10%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:900;
+    font-size: 45px;
+    color: grey;
+   
+
+}
+.pic-link:hover{
+    opacity: 0.8;
+    transition: ease-in 0.2s;
+    
+
+}
+.pic1:hover{
+    transform: scale(1.05,1.05);
+    transition: ease-in 0.2s;
+
+} 
+.pic2:hover{
+    transform: scale(1.05,1.05);
+    transition: ease-in 0.2s;
+
+} 
+.pic3:hover{
+    transform: scale(1.05,1.05);
+    transition: ease-in 0.2s;
+
+} 
+.pic4:hover{
+    transform: scale(1.05,1.05);
+    transition: ease-in 0.2s;
+
+} 
+.pic5:hover{
+    transform: scale(1.05,1.05);
+    transition: ease-in 0.2s;
+
+} 
+/*Hotels and flights*/
+#flights .container{
+    display: inherit;
+    text-align: center;
+    padding-top: 35px;
+}
+#flights .container h1{
+    font-weight: 600;
+    font-size: 50px;
+    color: var(--secondary-color);
+    
+}
+.flights h2{
+    
+    font-size: 35px;
+    font-weight: 650;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 5px;
+    color: black;
+    margin-top: 25px;
+   
+    
+}
+
+.flight-chart{
+    display: flex;
+     margin:auto;
+     
+    flex-wrap: wrap;
+}
+.flight-card ,.flight-card1,.flight-card2,.flight-card3 ,.flight-card4{
+    align-items: center;
+    border: solid var(--secondary-color);
+    background-color: rgb(245, 243, 243);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgb(0, 0, 0, 0.2);
+    margin: 10px auto;
+}
+.flight-card:hover{
+    transform: scale(1.05,1.05);
+    box-shadow: 0 3px 10px rgb(0, 0, 0, 0.8);
+    
+}
+.flight-card1:hover{
+    transform: scale(1.05,1.05);
+    box-shadow: 0 3px 10px rgb(0, 0, 0, 0.8);
+    
+}
+.flight-card2:hover{
+    transform: scale(1.05,1.05);
+    box-shadow: 0 3px 10px rgb(0, 0, 0, 0.8);
+    
+}
+.flight-card3:hover{
+    transform: scale(1.05,1.05);
+    box-shadow: 0 3px 10px rgb(0, 0, 0, 0.8);
+    
+}.flight-card4:hover{
+    transform: scale(1.05,1.05);
+    box-shadow: 0 3px 10px rgb(0, 0, 0, 0.8);
+    
+}
+.flight-chart h3{
+    color: rgb(95, 42, 219);
+    margin-bottom: 5px;
+   
+    
+}
+.flight-chart h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin:10px 10px;
+}
+h5{
+    color: gray;
+    margin: 2px;
+}
+.booknow{
+   
+    text-align: center;
+    padding: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 155px;
+    margin: 15px auto;
+    border-radius: 15px;
+    background-color: green;
+    color: white;
+}
+.booknow:hover{
+    opacity: 0.9;
+    background-color: rgb(6, 78, 16);
+    
+}
+/*Hotels*/
+#hotels{
+    background-color: rgb(59, 56, 56);
+   
+}
+#hotels .container{
+    padding: 3%;
+    max-width: 95%;
+    display: list-item;
+}
+.hotel-heading{
+    
+    
+    margin: auto;
+    text-align: center;
+}
+#hotels  h1{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+    font-size: 45px;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.884);
+}
+.search-grid{
+    margin: 40px 0;
+    display: grid;
+    gap: 20px;
+    grid-template-rows:80px 200px 250px;
+    grid-template-columns: repeat(2, 1fr ) 25%;
+    overflow: hidden;
+}
+.search{
+    padding-top: 8px;
+    display: flex;
+    grid-column: 1/3;
+    
+    
+   
+}
+.search-bar{
+   padding: 16px;
+    width: 70%;
+   margin: 2%;
+    height: 40px;
+    border: none;
+    border-radius: 16px;
+}
+.filter-box{
+    width: 20%;
+    height: 100%;
+    color: white;
+    background-color: grey;
+    padding-top: 9px;
+    border-radius: 15px;
+    
+}
+.filter{
+    padding: 4px;
+}
+.stars{
+    margin: 2px 6px;
+}
+.star5, .star7{
+    height: 470px;
+    width: 100%;
+}
+.star3{
+    height: 250px;
+}
+.star4{
+    height: 280px;
+}
+.a1{
+   
+    grid-column: 3/4;
+    grid-row: 1/3;
+    position: relative;
+}
+.a3{
+    grid-column: 1/2;
+    grid-row: 2/4;
+    position: relative;
+}
+.a4{
+    grid-column: 2/3;
+    grid-row: 2/4;
+    position: relative;
+}
+.a2{
+    position: relative;
+    grid-row:3/4 ;
+    grid-column: 3/4;
+}
+.text2{
+    position: absolute;
+    
+   bottom: 50px;
+    left: 32%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:900;
+    font-size: 45px;
+    color: rgb(255, 255, 255);
+   
+
+}
+.hotel-link:hover{
+    opacity: 0.5;
+    transition: ease-in 0.2s;
+    
+
+}
+.star3:hover{
+    transform: scale(1.05,1.05);
+    transition: ease-in 0.2s;
+
+} 
+.star4:hover{
+    transform: scale(1.05,1.05);
+    transition: ease-in 0.2s;
+
+} 
+.star5:hover{
+    transform: scale(1.05,1.05);
+    transition: ease-in 0.2s;
+
+} .star7:hover{
+    transform: scale(1.05,1.05);
+    transition: ease-in 0.2s;
+
+} 
+/*team*/
+.team{
+    padding: 45px;
+
+display: flex;
+flex-wrap: wrap;}
+.our-team{
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+    font-size: 45px;
+    letter-spacing: 2px;
+    color: rgba(0, 0, 0, 0.7);
+    margin-top: 45px;
+}
+.team .container{
+    width: 393px;
+    
+    
+    margin: 10px auto;
+    
+   
+    
+}
+
+.teamb1{
+background-color:rgba(206, 206, 200, 0.288) ;
+position: relative;
+height: 95px;
+width: 100%;
+text-align: center;
+font-size: 27px;
+padding-top: 40px;
+font-weight: 650;
+
+}
+.teamb2{
+background-color: rgb(255, 255, 255);
+height: 155px;
+width: 100%;
+position: relative;
+}
+.team img{
+    border-radius: 50%;
+    width: 215px;
+   
+    position: absolute;
+    
+}
+.teamb3{
+    background-color:var(--secondary-color);
+    height: 195px;
+width: 100%;
+text-align: center;
+padding-top: 95px;
+color: white;
+letter-spacing: 1.5px;
+}
+/*footer*/
+footer{
+    background-color: var(--secondary-color);
+    color: white;
+}
+footer .container{
+    padding: 35px 15px 30px 15px;
+
+    
+}
+footer.container h1{
+  margin-bottom: 52px;
+}
+footer .container h2{
+    margin: 20px 5px 20px 5px ;
+}
+footer .container nav ul li a{
+    color: white;
+    line-height: 32px;
+    
+}
+.footer .social a{
+    margin: 0 10px;
+    
+} 
+
+
+@keyframes slideinfrombottom {
+    0% {
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes slideinfromleft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes slideinfromright {
+    0% {
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes slideinfromtop {
+    0% {
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@media(max-width: 768px){
+    .navbar .container{
+        border-radius: 0;
+    }
+    footer .foot-1{
+        grid-column: 1/4;
+    }
+    .navbar{
+        padding: 0;
+    }
+    #trav-choices .container{
+        display: list-item;
+    }
+    .travel-tag{
+        width: 100%;
+    }
+    .main-card {
+        width: 100%;
+        display: inline;
+    }
+    .search-grid{
+        display: list-item;
+    }
+    .search,.a1,.a2,.a3,.a4{
+        width: 100%;
+        margin-bottom: 8px;
+    
+    }
+    .filter-box{
+        width: 100%;
+    }
+    .star3{
+        width: 100%;
+        
+}
+.flight-card1,.flight-card2,.flight-card3,.flight-card4{
+    display: none;
+    
+}
+#flights .container h1{
+    font-size: 25px;
+}
+.flights h2{
+    font-size: 20px;
+}
+.navbar nav{
+   
+    margin-top: 25px;
+    padding: 15px;
+    background-color: rgba(19, 15, 15, 0.411);
+    
+}
+.navbar ul li {
+    border: none;
+    font-size: small;
+    
+    padding:0 0 8px 0;
+    margin: 10px 0;
+}.navbar ul li i{
+    display: none;
+    
+}
+
+.navbar .flex{
+    flex-direction: column;
+}
+.navbar ul li:hover{
+    border:none ;
+    border-bottom: solid black;
+    border-radius: 0;
+}
+.about .grid{
+grid-template-columns: 1fr;
+}
+.about img{
+    width: 100%;
+}
+.tag-back .container {
+  display:none;
+}
+.home{display: none;}
+
+.welcome-tag{
+    animation: none;
+}
+
+.about img{
+    animation: slideinfrombottom 0.8s ease-in;
+}
+.team .container{
+    width: 100%;
+}
+.team{
+    padding: 3px;
+}
+}
+@media(max-width: 450px){
+.team img{
+    width: 140px;
+}
+.teamb3{
+    padding-top: 55px;
+}
+iframe{
+    width: 200px; 
+    height: 250px;
+}
+
+}

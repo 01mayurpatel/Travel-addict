@@ -1,0 +1,48 @@
+.container{
+    max-width: 1150px;
+    padding:0 40px;
+    margin: auto;
+    display: flex;
+}
+.flex{
+   display: flex;
+   flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+ .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+} 
+.grid-3{
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+  list-style: none;
+}
+h1{
+    font-weight: 400;
+    font-size: xx-large;
+}
+h2{
+    font-weight: 400;
+}
+h3{
+    color: rgb(95, 42, 219);
+    
+}
+i{
+    color: rgb(255, 255, 255);
+}
