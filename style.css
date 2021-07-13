@@ -690,6 +690,9 @@ footer .container{
     display: list-item;
     
 }
+.about p{ font-weight:300;
+}
+
 }
 @media(max-width: 450px){
 .team img{
