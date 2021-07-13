@@ -663,9 +663,7 @@ footer .container .social{
 .about .grid{
 grid-template-columns: 1fr ;
 }
-.about img{
-    width: 100%;
-}
+
 .tag-back .container {
   display:none;
 }
