@@ -95,6 +95,9 @@ body{
     animation: slideinfromright 0.5s ease-in ;
     border-radius: 46px;
     border-top-left-radius: 0;
+    width:100%;
+   height:100%;
+overflow: hidden;
    
 }
 
